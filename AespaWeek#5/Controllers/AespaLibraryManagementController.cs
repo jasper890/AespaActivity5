@@ -1,5 +1,4 @@
-﻿using AespaWeek_5.Data;
-using AespaWeek_5.Models;
+﻿using AespaWeek_5.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 namespace AespaWeek_5.Controllers
@@ -8,9 +7,9 @@ namespace AespaWeek_5.Controllers
     [ApiController]
     public class AespaLibraryManagementController : Controller
     {
-        private readonly DataContext _context;
+        private readonly AespaLibraryManagementContext _context;
 
-        public AespaLibraryManagementController(DataContext context)
+        public AespaLibraryManagementController(AespaLibraryManagementContext context)
         {
             _context = context;
         }
